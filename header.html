@@ -1,0 +1,25 @@
+<nav class="navbar navbar-default header" ng-controller="headerCtrl as header">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand title" href="#">AIR AND WATER MONITORING SYSTEM</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right nav-icons">
+        <li ng-class="{'active':header.isActive('/') == 'active'}"><a href="" ui-sref="home"><i class="glyphicon glyphicon-home"></i>HOME</a></li>
+        <li ng-class="{'active':header.isActive('/dashboard') == 'active'}"><a href="" ui-sref="dashboard"><i class="glyphicon glyphicon-dashboard"></i>DASHBOARD</a></li>
+        <li ng-class="{'active':header.isActive('/devices') == 'active'}"><a href="" ui-sref="devices"><i class="glyphicon glyphicon-phone"></i>DEVICES</a></li>
+        <li ng-class="{'active':header.isActive('/pollution-board') == 'active'}"><a href="" ui-sref="pollution-board"><i class="glyphicon glyphicon-book"></i>POLLUTION BOARD</a></li>
+        <li ng-class="{'active':header.isActive('/admin') == 'active'}"><a href="" ui-sref="admin"><i class="glyphicon glyphicon-tasks"></i>ADMIN</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>

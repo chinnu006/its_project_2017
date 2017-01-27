@@ -1,0 +1,38 @@
+html, body {
+  min-height : 100%;
+}
+body {
+  background-color: #DAE1E4;
+}
+.header {
+  background-image: linear-gradient(to bottom,#69F6A0 0,#69F6A2 100%);
+  font-weight: bold;
+  width : 100%;
+  border-bottom: 1px solid #8C9C93;
+}
+
+.title {
+  font-size: 18px;
+  background-color: #26404A !important;
+  color: #E7F5FA !important;
+}
+
+.nav-icons li a {
+  color: #26404A !important;
+  padding: 15px 5px 12px 0  !important;
+  margin: 0 15px 0 20px;
+}
+
+.nav-icons li a:hover, .nav-icons li a:active {
+  border-bottom : 3px solid #26404A;
+}
+.nav-icons li.active a{
+  border-bottom : 3px solid #26404A;
+  background-color: transparent !important;
+  background-image: linear-gradient(to bottom,transparent 0,transparent 100%) !important;
+  box-shadow: none !important;
+}
+
+.nav-icons i{
+  padding-right: 5px;
+}
